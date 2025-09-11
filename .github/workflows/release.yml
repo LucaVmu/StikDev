@@ -16,7 +16,7 @@ jobs:
         run: |
           sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
 
-      - name: Compile Feather
+      - name: Compile StikDev
         run: | 
           agvtool new-version -all $(git rev-parse HEAD)
           make
