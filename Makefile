@@ -26,15 +26,16 @@ deps:
 
 $(SCHEMES): deps
 	xcodebuild \
-	    -project StikDev.xcodeproj \
-	    -scheme "$@" \
-	    -configuration Release \
-	    -arch arm64 \
-	    -sdk $(PLATFORM) \
-	    -derivedDataPath $(TMP) \
-	    -skipPackagePluginValidation \
-	    CODE_SIGNING_ALLOWED=NO \
-	    ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO
+		-project StikDev.xcodeproj \
+		-scheme "$@" \
+		-configuration Release 
+		-arch arm64 \
+		-sdk $(PLATFORM) \
+		-derivedDataPath $(TMP) \
+		-skipPackagePluginValidation \
+		-destination 'generic/platform=iOS' \
+		CODE_SIGNING_ALLOWED=NO \
+		ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO
 
 	rm -rf Payload
 	rm -rf $(STAGE)/
