@@ -27,7 +27,7 @@ deps:
 $(SCHEMES): deps
 	xcodebuild \
 	    -project StikDev.xcodeproj \
-	    -schemes "$@"
+	    -scheme "$@"
 	    -configuration Release \
 	    -arch arm64 \
 	    -sdk $(PLATFORM) \
