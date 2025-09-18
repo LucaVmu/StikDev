@@ -32,7 +32,7 @@ $(SCHEMES): deps
 		-sdk $(PLATFORM) \
 		-derivedDataPath $(TMP) \
 		-skipPackagePluginValidation \
-		-destination 'generic/platform=iOS' \
+#		-destination 'generic/platform=iOS' \
 		CODE_SIGNING_ALLOWED=NO \
 		ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO
 
