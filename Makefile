@@ -28,7 +28,7 @@ $(SCHEMES): deps
 	xcodebuild \
 		-project StikDev.xcodeproj \
 		-scheme "$@" \
-		-configuration Release 
+		-configuration Release \
 		-arch arm64 \
 		-sdk $(PLATFORM) \
 		-derivedDataPath $(TMP) \
