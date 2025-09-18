@@ -29,7 +29,6 @@ $(SCHEMES): deps
 		-project StikDev.xcodeproj \
 		-scheme "$@" \
 		-configuration Release \
-		-arch arm64 \
 		-sdk $(PLATFORM) \
 		-derivedDataPath $(TMP) \
 		-skipPackagePluginValidation \
