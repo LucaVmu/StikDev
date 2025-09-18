@@ -1,5 +1,5 @@
 NAME := Feather
-PLATFORM := iphoneos18.1
+PLATFORM := iphoneos
 SCHEMES := Feather
 TMP := $(TMPDIR)/$(NAME)
 STAGE := $(TMP)/stage
